@@ -246,17 +246,17 @@ Straße (Angaben nur zur Hauptniederlassung). Beispielsweise Teststraße 2. Zul�
 Das CLI ist _work in progress_ und 
 
 ```
-usage: handelsregister.py [-h] [-d] -s SCHLAGWOERTER [-so {all,min,exact}]
+usage: handelsregister.py [-h] [-d] [-f] -s SCHLAGWOERTER [-so {all,min,exact}]
 
 A handelsregister CLI
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -d, --debug           Enable debug mode and activate logging
+  -f, --force           Force a fresh pull and skip the cache
   -s SCHLAGWOERTER, --schlagwoerter SCHLAGWOERTER
                         Search for the provided keywords
   -so {all,min,exact}, --schlagwortOptionen {all,min,exact}
-                        Keyword options: all=contain all keywords; min=contain
-                        at least one keyword; exact=contain the exact company
-                        name.
+                        Keyword options: all=contain all keywords; min=contain at least one
+                        keyword; exact=contain the exact company name.
 ```
